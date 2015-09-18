@@ -9,7 +9,7 @@
 #   A special "matrix" object that can be used bt the "cacheSolve" function
 #       to cache and retrieve the inverse 
 makeCacheMatrix <- function(x = matrix()) {
-
+        list()
 }
 
 
