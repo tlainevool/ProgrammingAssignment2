@@ -16,3 +16,4 @@ test_that("The inverse can be gotten from the 'matrix'", {
 
         expect_equal(cacheSolve(x), solve(original))
 })
+
