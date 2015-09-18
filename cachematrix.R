@@ -7,13 +7,20 @@
 #
 # Returns:
 #   A special "matrix" object that can be used bt the "cacheSolve" function
-#       to cache and retrieve the inverse 
+#       to cache and retrieve the inverse
 makeCacheMatrix <- function(x = matrix()) {
-        list()
+        m <- NULL
+        set <- function(y) {
+                x <<- y
+                m <<- NULL
+        }
+        get <- function() x
+
+        list(set = set, get = get)
 }
 
 
-# Takes a special "matrix" object created by makeCacheMatrix above and 
+# Takes a special "matrix" object created by makeCacheMatrix above and
 #    computes the inverse. If the inverse has already been calculated
 #    (and the matrix has not changed), then retrieve the inverse from the cache
 #
