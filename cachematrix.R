@@ -1,4 +1,5 @@
-# This pair of functions caches the inverse of a matrix
+## This pair of functions caches the inverse of a matrix
+
 
 # Creates a special "matrix" object that can cache its inverse.
 #
